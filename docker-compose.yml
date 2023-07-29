@@ -1,0 +1,8 @@
+php:
+  image: php:7.4-apache
+  container_name: php-meucalendario
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - ./webserver/:/var/www/html
